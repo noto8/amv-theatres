@@ -1,0 +1,35 @@
+.film-content{
+    margin: 60px 0;
+    .headline{
+        margin: 0 0 3.75rem -2px;
+        max-width: 66%;
+        font-size: 40px;
+        letter-spacing: -.04em;
+    }
+    .about{
+        display: flex;
+        ul{
+            min-width: 400px;
+            font-weight: 500;
+            text-transform: uppercase;
+            li{
+                span{
+                    margin: 0 9px;
+                }
+            }
+        }
+        .description{
+            margin: 0 0 18px;
+            font-size: 18px;
+            line-height: 1.9em;
+        }
+        *{
+            list-style: none;
+            line-height: 28px;
+            font-size: 14px;
+            &:not(:last-child){
+                margin-right: 30px;
+            }
+        }
+    }
+}

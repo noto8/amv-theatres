@@ -1,0 +1,49 @@
+.summary{
+    .checkout{
+        max-width: 440px;
+        max-height: calc(100vh - 211px);
+        overflow: scroll;
+        margin: 0 auto 0;
+        padding: 20px;
+        .hl{
+            color: #747474;
+            margin: 16px 0 8px;
+            text-transform: uppercase;
+        }
+        .seat{
+            display: flex;
+            justify-content: space-between;
+            margin: 7px 0;
+            span:last-child{
+                margin-left: 10px;
+            }
+        }
+        .divider{
+            height: 1px;
+            background: hsla(0,0%,88%,.35);
+            margin: 10px 0;
+        }
+        .total{
+            text-align: right;
+            margin: 7px 0;
+            .cost{
+                font-size: 20px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+        input{
+            display: none;
+        }
+    }
+
+    .continue-cont{
+        button{
+            background: $primary;
+            color: #fff;
+            &:hover{
+                background: $secondary;
+            }
+        }
+    }
+}

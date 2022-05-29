@@ -1,0 +1,101 @@
+.session_cont{
+    max-height: calc(100vh - 98px);
+    width: 56%;
+    overflow: scroll;
+    padding: 56px 0 0;
+    position: relative;
+
+    h4.theatre{
+        font-size: 24px;
+        font-weight: 900;
+    }
+    
+    ul.timetable{
+        padding: 24px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        &:not(:last-child){
+            margin: 0 0 35px 0;
+        }
+        .time-cell{
+            min-width: 100px;
+            width: 20%;
+            margin-bottom: 10px;
+            &:not(:last-child){
+                margin-right: 15px;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                border: 2px solid #fff;
+                border-radius: 1000px;
+                padding: 12px 0;
+                font-size: 15px;
+                font-weight: 600;
+                text-align: center;
+                transition: .15s;
+            }
+            &.disabled{
+                opacity: 0.3;
+                user-select: none;
+                cursor: not-allowed;
+                a{
+                    text-decoration: line-through;
+                }
+            }
+            &:not(.disabled){
+                a:hover{
+                    color: $link;
+                    border-color: $link;
+                }
+            }
+            .info{
+                text-align: center;
+                font-size: 11px;
+                font-weight: 700;
+                margin: 5px 0 0;
+                height: 12px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+
+.session_film{
+    padding: 56px 0 0;
+    max-width: 38%;
+    word-wrap: break-word;
+    .video{
+        position: relative;
+        #t_ytVideoCover{
+            width: 482px; height: 275px;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            .play-btn{
+                height: 90px;
+                width: 90px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    h2{
+        margin: 42px 0 11px;
+        font-weight: 900;
+    }
+    .info{
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        span{
+            margin: 0 9px;
+        }
+    }
+}

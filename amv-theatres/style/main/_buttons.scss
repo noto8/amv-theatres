@@ -1,0 +1,18 @@
+.button{
+    display: inline-block;
+    cursor: pointer;
+    transition: .15s;
+    border: none;
+    border-radius: 1000px;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    &.primary{
+        background: $primary;
+        &:hover{
+            background: $secondary;
+        }
+    }
+}

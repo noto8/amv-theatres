@@ -1,0 +1,43 @@
+.carousel{
+    margin: 0 0 80px;
+    overflow: hidden;
+    .carousel-viewport{
+        width: 80%;
+        margin: auto;
+        .carousel-slides{
+            display: flex;
+            position: relative;
+            transition: .5s;
+            .carousel-slide{
+                min-width: 100%;
+                padding: 0 20px;
+                img{
+                    cursor: pointer;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0;
+        .dot{
+            cursor: pointer;
+            box-sizing: content-box;
+            background-clip: padding-box !important;
+            width: 9px;
+            height: 9px;
+            background: hsla(0,0%,100%,.5);
+            border: 2px solid transparent;
+            border-radius: 50%;
+            margin: 0 3px;
+            transition: .15s;
+            &.selected, &:hover{
+                background: #000;
+                border-color: #fff;
+            }
+        }
+    }
+}

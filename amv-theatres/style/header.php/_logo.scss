@@ -1,0 +1,10 @@
+.logo{
+    font-family: 'Gordita';
+    font-weight: bold;
+    font-size: 22px;
+    border-bottom: 3px $primary solid;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    span{color: $primary;}
+}

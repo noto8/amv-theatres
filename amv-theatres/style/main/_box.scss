@@ -1,0 +1,46 @@
+.box{
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    
+    .cover{
+        margin-right: 40px;
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        display: block;
+    }
+    .about{
+        max-width: 877px;
+        .title{
+            letter-spacing: -.03em;
+            font-weight: 500;
+            font-size: 30px;
+            margin: 0 0 15px 0;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .description{
+            font-size: 18px;
+            line-height: 1.9em;
+            margin: 0 0 14px 0;
+        }
+        .info, .date{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 28px;
+            color: hsla(0,0%,100%,.7);
+            span{
+                margin: 0 9px;
+            }
+        }
+        .info{
+            text-transform: uppercase;
+        }
+        .date{
+            margin: 0 0 16px 0;
+        }
+    }
+}

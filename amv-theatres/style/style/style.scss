@@ -1,0 +1,33 @@
+//variables
+@import "../variables/colors";
+
+//main
+@import "../main/main";
+@import "../main/buttons";
+@import "../main/box";
+
+//scrollbar & fonts
+@import "../main/scrollbar";
+@import "../fonts/fonts";
+
+//film.php
+@import "../film.php/main";
+@import "../film.php/hero";
+@import "../film.php/description";
+@import "../film.php/carousel";
+@import "../film.php/cast-crew";
+
+//session.php | seats.php | payment.php
+@import "../tickets/session";
+@import "../tickets/seats";
+@import "../tickets/summary";
+@import "../tickets/header_alt";
+@import "../tickets/payment";
+@import "../tickets/done";
+
+//header
+@import "../header.php/main";
+@import "../header.php/logo";
+
+//footer
+@import "../footer.php/main";

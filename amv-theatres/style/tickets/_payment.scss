@@ -1,0 +1,25 @@
+.payment{
+    max-width: 440px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    span{
+        line-height: 40px;
+    }
+    input{
+        color: #fff;
+        width: 100%;
+        background: transparent;
+        border: 1px solid hsla(0,0%,88%,.35);
+        border-radius: 1000px;
+        padding: 15px;
+        margin: 3px 0;
+        &:not(input[type=email]){cursor: not-allowed;}
+    }
+    button{
+        margin: 20px 0 0;
+        position: absolute;
+        right: 0;
+    }
+}

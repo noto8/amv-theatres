@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    padding: 12px 0;
+    width: 100%;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    .wrapper{
+        display: flex;
+        width: 100%;
+        ul{
+            display: flex;
+            margin: auto;
+            li{
+                margin: 0 16px;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+        }
+        .showtimes{
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            svg{
+                width: 59px;
+                height: 36px;
+            }
+            span{
+                display: block;
+                transform: translate(0, 25%);
+                font-weight: 500;
+            }
+        }
+    }
+}
